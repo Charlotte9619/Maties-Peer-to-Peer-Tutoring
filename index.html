@@ -42,18 +42,10 @@
       gap: 4px;
     }
 
-    .wordmark-top {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--maroon);
-    }
-
     .wordmark-main {
       font-size: 26px;
       font-weight: 700;
-      color: var(--text);
+      color: var(--maroon);
       letter-spacing: -0.02em;
     }
 
@@ -295,7 +287,6 @@
 
   <header>
     <div class="wordmark">
-      <span class="wordmark-top">Stellenbosch University</span>
       <span class="wordmark-main">Maties P2P Tutoring</span>
       <span class="wordmark-sub">Student-to-student. In-person. Stellenbosch.</span>
     </div>
@@ -526,7 +517,7 @@
       const payload = { name, email, phone, notes, subjects };
 
       try {
-        const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwm6B5uwXLMnBTIJLyhAXoNQ5n1gzuZCkB3vpOsGzBfQ-N4NiXiWnp_x6jDAROCP473qw/exec';
+        const SHEET_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
         await fetch(SHEET_URL, {
           method: 'POST',
           mode: 'no-cors',
